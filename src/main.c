@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+
+
 int main(int argc, char **argv) {
     if (argc < 2) {
         fprintf(stderr, "Usage: %s file\n", argv[0]);
@@ -68,7 +70,16 @@ int main(int argc, char **argv) {
                     break;
             }
             value[++j] = '\0';
-            printf("%s :: %s -> %s\n", section, key, value);
+            unsigned int vlen = j;
+            for (j = 1; j < vlen - 1; j++) {
+                if (value[j] == ',') {
+                    printf("\n");
+                    continue;
+                }
+                printf("%c", value[j]);
+            }
+            
+            printf("\n%s :: %s -> %s\n", section, key, value);
         }
     }
     

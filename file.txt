@@ -1,9 +1,12 @@
 [c]
-10=[if,else,int ,",',unsigned ,const ,;,\[,\],(,)]
+ext=[c,h]
+color10=[if,else,int ,",',unsigned ,const ,;,\[,\],(,)]
 
-[another thing]
+[python]
+ext=[py]
+color10=[if,else,elif]
 
-var\=var=[a,b,c,d]
+[text]
+ext=[txt]
 
-[this[has\]brackets]
 
