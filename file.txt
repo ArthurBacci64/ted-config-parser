@@ -1,3 +1,9 @@
 [c]
 10=[if,else,int ,",',unsigned ,const ,;,\[,\],(,)]
 
+[another thing]
+
+var\=var=[a,b,c,d]
+
+[this[has\]brackets]
+
